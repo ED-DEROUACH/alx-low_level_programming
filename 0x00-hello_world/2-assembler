@@ -1,2 +1,2 @@
 #!bin/bash
-gcc -S $CFILiE
+cfile=$CFILE; gcc -S $cfile -o ${cfile%.c}.s
