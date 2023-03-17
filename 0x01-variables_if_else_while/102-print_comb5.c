@@ -8,23 +8,20 @@
  */
 int main(void)
 {
-int d, p, q;
-for (d = '0'; d < '9'; d++)
+int i, j;
+for (i = 0; i < 100; i++)
 {
-for (p = d + 1; p <= '9'; p++)
+for (j = i + 1; j < 100; j++)
 {
-for (q = p + 1; q <= '9'; q++)
+putchar((i / 10) + '0');
+putchar((i % 10) + '0');
+putchar(' ');
+putchar((j / 10) + '0');
+putchar((j % 10) + '0');
+if (i != 98 || j != 99)
 {
-if (p != d && p != q && d != q)
-{
-putchar(d);
-putchar(p);
-putchar(q);
-if (d == '7' && p == '8')
-continue;
 putchar(',');
 putchar(' ');
-}
 }
 }
 }
