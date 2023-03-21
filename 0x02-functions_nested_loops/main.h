@@ -11,5 +11,5 @@ int yet_another_function(float arg3);
 
 /* Prototype for _putchar */
 int _putchar(char c);
-
+void print_alphabet(void);
 #endif /* MAIN_H */
