@@ -1,11 +1,13 @@
 #include <stdio.h>
 /**
- * main - Cette fonction calcule et imprime
- * la somme de tous les multiples de 3 ou de 5
- * inférieurs à 1024 (exclus).
+ * main - main fonction
+ * @i: variable
+ * @sum: variable
+ * Return: always 0
  */
-void main(int)
+void main(void)
 {
+int i;
 int sum = 0;
 for (int i = 1; i < 1024; i++)
 {
