@@ -1,28 +1,19 @@
-#include <unistd.h>
+#include <stdio.h>
 /**
  * main - Entry point
  *
- * Return: Alwyas 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-char c = '_';
-write(1, &c, 1);
-c = 'p';
-write(1, &c, 1);
-c = 'u';
-write(1, &c, 1);
-c = 't';
-write(1, &c, 1);
-c = 'c';
-write(1, &c, 1);
-c = 'h';
-write(1, &c, 1);
-c = 'a';
-write(1, &c, 1);
-c = 'r';
-write(1, &c, 1);
-c = '\n';
-write(1, &c, 1);
+putchar('_');
+putchar('p');
+putchar('u');
+putchar('t');
+putchar('c');
+putchar('h');
+putchar('a');
+putchar('r');
+putchar('\n');
 return (0);
 }
