@@ -1,13 +1,11 @@
 #include <stdio.h>
 /**
  * main - main fonction
- * @i: variable
  * @sum: variable
  * Return: always 0
  */
-void main(void)
+void main(int sum)
 {
-int i;
 int sum = 0;
 for (int i = 1; i < 1024; i++)
 {
