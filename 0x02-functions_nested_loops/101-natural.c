@@ -4,7 +4,7 @@
  * la somme de tous les multiples de 3 ou de 5
  * inférieurs à 1024 (exclus).
  */
-void main(void)
+void main(int)
 {
 int sum = 0;
 for (int i = 1; i < 1024; i++)
@@ -15,4 +15,5 @@ sum += i;
 }
 }
 printf("%d\n", sum);
+return (sum);
 }
