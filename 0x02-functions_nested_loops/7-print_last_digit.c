@@ -5,7 +5,7 @@
  * @n: the number to be processed
  * Return: the value of the last digit
  */
-int print_last_digit(int n)
+int print_last_digit(INT_MIN)
 {
 int last_digit;
 if (n < 0)
