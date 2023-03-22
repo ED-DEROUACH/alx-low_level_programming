@@ -1,43 +1,53 @@
-#include "main.h"
 #include <stdio.h>
-/*
- * La fonction fibonacci génère
- * les n premiers nombres de
- * la séquence de Fibonacci.
- * Elle prend en entrée le
- * nombre de termes à
- * générer (n) et retourne
- * le premier terme de la séquence.
- */
-int fibonacci(int n)
-{
-int a = 1, b = 2, c;
-int i;
-printf("%d, %d, ", a, b);
-for (i = 3; i <= n; i++)
-{
-c = a + b;
-printf("%d", c);
-if (i != n)
-{
-printf(", ");
-}
-else
-{
-printf("\n");
-}
-a = b;
-b = c;
-}
-return (a);
-}
-/*
- * La fonction principale appelle la fonction
- * fibonacci avec un argument
- * de 98 pour générer les 98
- * premiers nombres de la séquence de Fibonacci.
- */
-int main(void) {
-fibonacci(98);
-return (0);
-}
+
+
+	/**
+	 * main - fibonacci <3
+	 *
+	 * Purpose - no hardcode
+	 *
+	 * Return:  (Success)
+	 */
+
+
+	int main(void)
+	{
+		unsigned long int i;
+		unsigned long int bef = 1;
+		unsigned long int aft = 2;
+		unsigned long int l = 1000000000;
+		unsigned long int bef1;
+		unsigned long int bef2;
+		unsigned long int aft1;
+		unsigned long int aft2;
+
+
+		printf("%lu", bef);
+
+
+		for (i = 1; i < 91; i++)
+		{
+			printf(", %lu", aft);
+			aft += bef;
+			bef = aft - bef;
+		}
+
+
+		bef1 = (bef / l);
+		bef2 = (bef % l);
+		aft1 = (aft / l);
+		aft2 = (aft % l);
+
+
+		for (i = 92; i < 99; ++i)
+		{
+			printf(", %lu", aft1 + (aft2 / l));
+			printf("%lu", aft2 % l);
+			aft1 = aft1 + bef1;
+			bef1 = aft1 - bef1;
+			aft2 = aft2 + bef2;
+			bef2 = aft2 - bef2;
+		}
+		printf("\n");
+		return (0);
+	}
