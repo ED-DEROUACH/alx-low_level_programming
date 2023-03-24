@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - check the code.
  *
@@ -13,5 +14,6 @@ _putchar('\n');
 print_times_table(98);
 _putchar('\n');
 print_times_table(12);
+_putchar('\n');
 return (0);
 }
