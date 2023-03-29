@@ -2,6 +2,7 @@
 
 /**
  * main - Entry point
+ *@*p: pointer to string params
  *
  * Return: Always 0 (Success)
  */
