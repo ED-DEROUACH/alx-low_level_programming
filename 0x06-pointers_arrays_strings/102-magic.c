@@ -8,9 +8,9 @@
 * pointer, and then performs
 * some operations on them.
 *
-* int n;: Déclare une variable n de type int.
-* int a[5];: Déclare un tableau a de cinq éléments de type int.
-* int *p;: Déclare un pointeur p de type int*.
+* @n;: Déclare une variable n de type int.
+* @a[5];: Déclare un tableau a de cinq éléments de type int.
+* @*p;: Déclare un pointeur p de type int*.
 *
 * Return: Always 0 (Success)
 */
