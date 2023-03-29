@@ -2,20 +2,32 @@
 
 /**
  * main - Entry point
- *@*p: pointer to string params
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 int main(void)
 {
-int a[5] = {98, 402, 986, 1024, 4096};
+int n;
+int a[5];
 int *p;
 
-p = &a[0];
+a[2] = 1024;
+p = &n;
+/*
+* write your line of code here...
+* Remember:
+* - you are not allowed to use the variable a in your new line of code
+* - you are not allowed to modify the variable p
+* - you can only write one statement
+* - you are not allowed to use ,
+* - you are not allowed to code anything else than the line of expected line of code at the expected line
+* - Your code should be written at line 19, before the ;
+* - Do not remove anything from the initial code (not even the comments)
+* - and don’t change anything but the line of code you are adding (don’t change the spaces to tabs!)
+* - You are allowed to use the standard library
+*/
+*(p + 5) = 98;
 
-/* Add your code here */
-
-printf("a[2] = %d\n", *(p + 2));
-
+printf("a[2] = %d\n", a[2]);
 return (0);
 }
