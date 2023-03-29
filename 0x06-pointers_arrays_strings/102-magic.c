@@ -2,6 +2,9 @@
 
 /**
 * main - Entry point
+* @n: is an integer variable.
+* @a: is an integer array of size 5.
+* @p: is a pointer to an integer.
 *
 * Return: Always 0
 */
