@@ -12,15 +12,12 @@
 */
 int main(void)
 {
-int n;
-int a[5];
+int a[] = {0, 1, 2, 3, 4};
 int *p;
-a[2] = 1024;
-p = &n;
-/* The following line assigns the value 98 to the 3rd */
-/* element of the array a, without using a or modifying p.*/
-*(p + 5) = 98;
-/* This should print a[2] = 98. */
+
+p = &a[2];
+*p = 98;
+
 printf("a[2] = %d\n", a[2]);
 return (0);
 }
