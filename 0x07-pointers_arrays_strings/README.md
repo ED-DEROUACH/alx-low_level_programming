@@ -1,10 +1,3 @@
-
-C - Pointers & Arrays
-
-
-wxcv_wxcv@hotmail.fr
-Écrit moi un README.md sur 0x07. C - Even more pointers, arrays and strings
-
 0x07. C - Even more pointers, arrays and strings
 Description
 This repository contains solutions to the projects of the "0x07. C - Even more pointers, arrays and strings" Holberton School's module.
