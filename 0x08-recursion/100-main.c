@@ -1,21 +1,22 @@
 #include "main.h"
-#include <string.h>
+#include <stdio.h>
 
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
-int is_palindrome(char *s)
+int main(void)
 {
-    int len = strlen(s);
-    int i;
+    int r;
 
-    for (i = 0; i < len / 2; i++) {
-        if (s[i] != s[len - i - 1]) {
-            return (0);
-        }
-    }
-
-    return (1);
+    r = is_palindrome("level");
+    printf("%d\n", r);
+    r = is_palindrome("redder");
+    printf("%d\n", r);
+    r = is_palindrome("test");
+    printf("%d\n", r);
+    r = is_palindrome("step on no pets");
+    printf("%d\n", r);
+    return (0);
 }
