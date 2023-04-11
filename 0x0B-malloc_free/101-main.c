@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * print_tab - Prints an array of strings
+ * print_tab - Prints an array of string
  * @tab: The array to print
  *
- * Return: Nothing
+ * Return: nothing
  */
 void print_tab(char **tab)
 {
@@ -19,29 +19,20 @@ void print_tab(char **tab)
 }
 
 /**
- * main - Entry point
+ * main - check the code for ALX School students.
  *
- * Return: 0 on success, 1 on failure
+ * Return: 1 if an error occurred, 0 otherwise
  */
 int main(void)
 {
     char **tab;
 
-    /* Call the function to split the string into an array of strings */
     tab = strtow("      ALX School         #cisfun      ");
-
-    /* Check if the function failed */
     if (tab == NULL)
     {
-        printf("Failed to split string\n");
+        printf("Failed\n");
         return (1);
     }
-
-    /* Print the resulting array of strings */
     print_tab(tab);
-
-    /* Free the memory allocated by the function */
-    free_tab(tab);
-
     return (0);
 }
