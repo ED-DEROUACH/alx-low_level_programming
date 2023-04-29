@@ -4,9 +4,9 @@
 #include "lists.h"
 
 /**
- * main - check the code
+ * main - tocheck the code
  *
- * Return: Always 0.
+ * Return: to Always 0.
  */
 int main(void)
 {
