@@ -10,7 +10,6 @@ int set_bit(unsigned long int *n, unsigned int index);
 int _putchar(char c);
 int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
-int main(int argc, char *argv[])
 
 #endif
 

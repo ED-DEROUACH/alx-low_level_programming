@@ -4,23 +4,23 @@
  * binary_to_uint - converting  a binary number to unsigned int
  * @b: string contain  the binary number
  *
- * Return: the converted number decim_oussama
+ * Return: to convert number decim_oussama
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int l;
-	unsigned int decim_oussama = 0;
+	int i;
+	unsigned int dec_val = 0;
 
 	if (!b)
 		return (0);
 
-	for (l = 0; b[l]; l++)
+	for (i = 0; b[i]; i++)
 	{
-		if (b[l] < '0' || b[l] > '1')
+		if (b[i] < '0' || b[i] > '1')
 			return (0);
-		decim_oussama = 2 * decim_oussama + (b[l] - '0');
+		dec_val = 2 * dec_val + (b[i] - '0');
 	}
 
-	return (decim_oussama);
+	return (dec_val);
 }
 
