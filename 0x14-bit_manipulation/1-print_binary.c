@@ -7,23 +7,22 @@
  */
 void print_binary(unsigned long int n)
 {
-	int oussama;
-	unsigned long int count_oussama = 0;
-	unsigned long int current_oussama;
+	int i, count = 0;
+	unsigned long int current;
 
-	for (oussama = 63; oussama >= 0; oussama--)
+	for (i = 63; i >= 0; i--)
 	{
-		current_oussama = n >> oussama;
+		current = n >> i;
 
-		if (current_oussama & 1)
+		if (current & 1)
 		{
 			_putchar('1');
-			count_oussama++;
+			count++;
 		}
-		else if (count_oussama)
+		else if (count)
 			_putchar('0');
 	}
-	if (!count_oussama)
+	if (!count)
 		_putchar('0');
 }
 
