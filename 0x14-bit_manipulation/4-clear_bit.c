@@ -13,6 +13,6 @@ int clear_bit(unsigned long int *oussama, unsigned int oussamix)
 	if (oussamix > 63)
 		return (-1);
 
-	*oussama = (~(1UL << oussamix)& *oussama);
+	*oussama = (~(1UL << oussamix) & *oussama);
 	return (1);
 }
