@@ -14,4 +14,4 @@ int set_bit(unsigned long int *n, unsigned int oussama)
 
 	*n = ((1UL << oussama) | *n);
 	return (1);
-}		
+}
