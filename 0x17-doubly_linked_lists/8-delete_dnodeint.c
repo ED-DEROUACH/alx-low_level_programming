@@ -15,20 +15,23 @@ return (-1);
 
 current = *head;
 
-for (unsigned int i = 0; i < index && current != NULL; i++)
+do
+{
 current = current->next;
-
+index--;
 if (current == NULL)
 return (-1);
+} while (index != 0);
 
 if (current->prev != NULL)
 current->prev->next = current->next;
 else
+{
 *head = current->next;
-
 if (current->next != NULL)
-current->next->prev = current->prev;
-
+current->next->prev = NULL;
 free(current);
+}
+
 return (1);
 }
