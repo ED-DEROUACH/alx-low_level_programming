@@ -1,0 +1,28 @@
+# Variables
+NAME = school
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+
+# Rules
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $@
+
+clean:
+	-@/bin/rm -f $(NAME) *~
+
+oclean:
+	-@/bin/rm -f $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+-include m.h
+
