@@ -12,9 +12,12 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $@
 
 clean:
-	-@rm -f $(NAME) *~ $(OBJ)
+	-@/bin/rm -f $(NAME) *~
 
-fclean: clean
+oclean:
+	-@/bin/rm -f $(OBJ)
+
+fclean: clean oclean
 
 re: fclean all
 
@@ -22,6 +25,3 @@ re: fclean all
 	$(CC) $(CFLAGS) -c $< -o $@
 
 -include m.h
-
-.PHONY: all clean fclean re
-
